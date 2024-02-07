@@ -14,13 +14,11 @@ public:
     double getBy(){return by;}
     double getArea()
     {
-        double area = abs((bx-ax)*(by-ay));
-        return area;
+        return abs(bx-ax)*abs(by-ay);
     }
     double getLength()
     {
-        double length = 1;
-        return length;
+        return abs(bx-ax)*2 + abs(by-ay)*2;
     }
 private:
     double ax{0.0}, ay{0.0};
