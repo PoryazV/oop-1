@@ -2,5 +2,7 @@
 
 int main()
 {
-    std::cout << 1;
+    int a;
+    std::cin >> a;
+    std::cout << a;
 }
