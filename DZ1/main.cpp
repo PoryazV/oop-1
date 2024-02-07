@@ -1,8 +1,12 @@
 #include <iostream>
+#include "rectangle.hpp"
 
 int main()
 {
-    int a;
-    std::cin >> a;
-    std::cout << a;
+    double ax, ay, bx, by;
+    std::cin >> ax >> ay >> bx >> by;
+    Rectangle r;
+    r.setA(ax, ay);
+    r.setB(bx, by);
+    std::cout << r.getArea();
 }
